@@ -1,0 +1,113 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.banner {
+    background-color: #ff6347;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    animation: slideIn 2s;
+}
+
+.banner h1 {
+    margin: 0;
+    font-size: 3em;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.banner h2 {
+    margin: 10px 0;
+    font-size: 1.5em;
+    animation: fadeIn 3s ease-in-out;
+}
+
+.banner img {
+    margin: 20px 0;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.banner img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+}
+
+.banner a.button {
+    background-color: white;
+    color: #ff6347;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
+    margin: 10px;
+    display: inline-block;
+}
+
+.banner a.button:hover {
+    background-color: #ff6347;
+    color: white;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+}
+
+div {
+    margin: 20px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+h3 {
+    color: #ff6347;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 2em;
+    animation: slideIn 2s ease-in-out;
+}
+
+ul, ol {
+    list-style: none;
+    padding: 0;
+}
+
+ul li, ol li {
+    background: url('images/bullet.png') no-repeat left center;
+    padding-left: 20px;
+    margin-bottom: 10px;
+    font-size: 1em;
+}
+
+ul li a, ol li a {
+    text-decoration: none;
+    color: #ff6347;
+    transition: color 0.3s;
+}
+
+ul li a:hover, ol li a:hover {
+    color: #000;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
